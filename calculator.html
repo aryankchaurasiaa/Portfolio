@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Calculator | Arkum Technologies</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to existing CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Sirf is page ke image gallery ke liye chhota sa CSS */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        .gallery-img {
+            width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+            aspect-ratio: 9/19; /* Mobile screenshot ka size */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                Arkum Technologies
+                <span>by Aryan Kumar</span>
+            </a>
+            <!-- Back to Home Button -->
+            <a href="index.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Project Details Section -->
+    <section id="project-details" class="container" style="padding-top: 10rem; min-height: 100vh;">
+        <div class="section-header reveal">
+            <h1 class="gradient-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">Smart Calculator</h1>
+            <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">A modern, fast, and highly responsive calculator application designed to make your daily calculations effortless.</p>
+        </div>
+
+        <!-- 5 Screenshots Gallery -->
+        <div class="gallery-grid">
+            <img src="images/calc1.jpeg" alt="Calculator App Screen 1" class="gallery-img glass reveal" style="transition-delay: 0.1s;">
+            <img src="images/calc2.jpeg" alt="Calculator App Screen 2" class="gallery-img glass reveal" style="transition-delay: 0.2s;">
+            <img src="images/calc3.jpeg" alt="Calculator App Screen 3" class="gallery-img glass reveal" style="transition-delay: 0.3s;">
+            <img src="images/calc4.jpeg" alt="Calculator App Screen 4" class="gallery-img glass reveal" style="transition-delay: 0.4s;">
+            <img src="images/calc5.jpeg" alt="Calculator App Screen 5" class="gallery-img glass reveal" style="transition-delay: 0.5s;">
+        </div>
+
+        <!-- Details & Downloads -->
+        <div class="reveal" style="text-align: center; max-width: 800px; margin: 6rem auto 2rem; background: var(--surface-color); padding: 3rem 2rem; border-radius: 20px; border: 1px solid var(--glass-border);">
+            <h2 style="margin-bottom: 1.5rem;">Download The App</h2>
+            <p style="margin-bottom: 2.5rem;">Get the Smart Calculator app on your device. Choose your platform below to download the application files directly.</p>
+            
+            <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                <!-- Android Download Button (Apne APK ka link yahan href me daalein) -->
+                <a href="downloads/calculator.apk" download class="btn btn-primary" style="display: flex; align-items: center; gap: 0.8rem; font-size: 1.1rem; padding: 1rem 2rem;">
+                    <i class="fab fa-android" style="font-size: 1.5rem;"></i> Download for Android
+                </a>
+                
+                <!-- iOS Download Button (Apne iOS file ka link yahan href me daalein) -->
+                <a href="downloads/calculator-ios.ipa" download class="btn btn-outline" style="display: flex; align-items: center; gap: 0.8rem; font-size: 1.1rem; padding: 1rem 2rem;">
+                    <i class="fab fa-apple" style="font-size: 1.5rem;"></i> Download for iOS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="margin-top: 0;">
+        <div class="footer-bottom" style="border-top: none;">
+            <p>&copy; 2026 Aryan Kumar. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; opacity: 0.7;">Arkum Technologies — A personal technology brand by Aryan Kumar.</p>
+        </div>
+    </footer>
+
+    <!-- Link to existing JS -->
+    <script src="script.js"></script>
+</body>
+</html>
