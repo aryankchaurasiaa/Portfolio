@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects | Arkum Technologies</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to existing CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Search input par click karne par thoda glow effect */
+        #searchInput:focus {
+            box-shadow: 0 0 15px var(--accent-glow);
+            border-color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                Arkum Technologies
+                <span>by Aryan Kumar</span>
+            </a>
+            <!-- Back to Home Button -->
+            <a href="index.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- All Projects Section -->
+    <section class="container" style="padding-top: 10rem; min-height: 100vh;">
+        <div class="section-header reveal">
+            <h1 class="gradient-text" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">Project Archive</h1>
+            <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto; margin-bottom: 3rem;">A complete list of products, applications, and tools built under Arkum Technologies.</p>
+            
+            <!-- SEARCH BAR -->
+            <div style="max-width: 600px; margin: 0 auto; position: relative;">
+                <i class="fas fa-search" style="position: absolute; left: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1.2rem;"></i>
+                <input type="text" id="searchInput" placeholder="Search by project name or category..." style="width: 100%; padding: 1.2rem 1.5rem 1.2rem 3.5rem; border-radius: 50px; background: rgba(25, 25, 25, 0.6); border: 1px solid var(--glass-border); color: var(--text-main); font-size: 1rem; outline: none; transition: var(--transition); backdrop-filter: blur(12px);">
+            </div>
+        </div>
+
+        <div class="project-grid" id="projectList" style="margin-top: 3rem;">
+            
+            <!-- Project 1 -->
+            <div class="project-card glass reveal item">
+                <div class="project-meta">
+                    <span>Career / Productivity</span>
+                    <span class="project-status">Ready</span>
+                </div>
+                <i class="fas fa-file-alt project-icon"></i>
+                <h3>AARK Resume Builder</h3>
+                <p>A modern resume-building platform designed to help users create professional resumes quickly and easily.</p>
+                <div style="margin-top: auto; padding-top: 1rem;">
+                    <a href="https://aarkresume.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; text-align: center; font-size: 0.9rem;">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card glass reveal item">
+                <div class="project-meta">
+                    <span>Education / Attendance</span>
+                    <span class="project-status">Ready</span>
+                </div>
+                <i class="fas fa-clipboard-user project-icon"></i>
+                <h3>AttendX</h3>
+                <p>An automated attendance management solution designed to simplify attendance tracking and management.</p>
+                <div style="margin-top: auto; padding-top: 1rem;">
+                    <a href="#" class="btn btn-outline" style="width: 100%; text-align: center; font-size: 0.9rem;">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card glass reveal item">
+                <div class="project-meta">
+                    <span>Communication</span>
+                    <span class="project-status">In Development</span>
+                </div>
+                <i class="fas fa-comments project-icon"></i>
+                <h3>Akivo</h3>
+                <p>A modern messaging and communication application focused on simple, secure, and intuitive communication.</p>
+                <div style="margin-top: auto; padding-top: 1rem;">
+                    <a href="#" class="btn btn-outline" style="width: 100%; text-align: center; font-size: 0.9rem;">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card glass reveal item">
+                <div class="project-meta">
+                    <span>Education / Skills</span>
+                    <span class="project-status">In Development</span>
+                </div>
+                <i class="fas fa-laptop-code project-icon"></i>
+                <h3>SkillMate</h3>
+                <p>A platform designed to help students discover, develop, and manage their skills while connecting learning with practical opportunities.</p>
+                <div style="margin-top: auto; padding-top: 1rem;">
+                    <a href="#" class="btn btn-outline" style="width: 100%; text-align: center; font-size: 0.9rem;">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card glass reveal item">
+                <div class="project-meta">
+                    <span>Utility / Tool</span>
+                    <span class="project-status">Ready</span>
+                </div>
+                <i class="fas fa-calculator project-icon"></i>
+                <h3>Smart Calculator</h3>
+                <p>A fast, responsive, and modern calculator application built for daily use. Available for Android and iOS.</p>
+                <div style="margin-top: auto; padding-top: 1rem;">
+                    <a href="calculator.html" class="btn btn-outline" style="width: 100%; text-align: center; font-size: 0.9rem;">View Project</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="margin-top: 0;">
+        <div class="footer-bottom" style="border-top: none;">
+            <p>&copy; 2026 Aryan Kumar. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; opacity: 0.7;">Arkum Technologies — A personal technology brand by Aryan Kumar.</p>
+        </div>
+    </footer>
+
+    <!-- Link to existing JS -->
+    <script src="script.js"></script>
+    
+    <!-- Search Bar Logic (Sirf is page ke liye) -->
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const projects = document.querySelectorAll('.project-card.item');
+
+        searchInput.addEventListener('keyup', function() {
+            let filter = this.value.toLowerCase();
+            
+            projects.forEach(project => {
+                // Project ka sara text (Title, Description, Category) le raha hai
+                let text = project.innerText.toLowerCase(); 
+                
+                if (text.includes(filter)) {
+                    project.style.display = 'flex';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
